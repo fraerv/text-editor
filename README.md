@@ -10,9 +10,9 @@ Local.py script takes no argument while started. It takes a dictionary and reque
 # Server-Client mode
 
 Server.py script takes a path to dictionary file and the number or the port to serv on as command line arguments.
-The dictionary file must be a file with strings of a "<word> <frequency>" type lines with no quotes. Any other lines will be ignored.
+The dictionary file must be a file with strings of a "&lt;word&gt; &lt;frequency&gt;" type lines with no quotes. Any other lines will be ignored.
 Port number must be integer from 1025 to 65535.
 
 Client.py script takes an ip address and a port that Server.py is serving on.
-Possible requests are "get <prefix>" lines. Any other requests will be ignored.
+Possible requests are "get &lt;prefix&gt;" lines. Any other requests will be ignored.
 If there are no words starting with a prefix, there would be no answer.
