@@ -5,7 +5,7 @@ This is a simle text editor-like script. What it can do is to suggest words from
 
 # Local mode
 
-Local.py script takes no argument while started. It takes a dictionary and requests as it should do and then gives a list of suggestions. If there are no words starting with a prefix, there will be no answer. Same result will be given for incorrect request (empty string instead of a word or request containing spaces).
+Local.py script takes no argument while started. It takes a dictionary and requests as it should do and then gives a list of suggestions. If there are no words starting with a prefix, there would be no answer. Same result will be given for incorrect request (empty string instead of a word or request containing spaces).
 
 # Server-Client mode
 
@@ -15,4 +15,4 @@ Port number must be integer from 1025 to 65535.
 
 Client.py script takes an ip address and a port that Server.py is serving on.
 Possible requests are "get prefix" lines. Any other requests will be ignored.
-If there are no words starting with a prefix, there will be no answer.
+If there are no words starting with a prefix, there would be no answer.
