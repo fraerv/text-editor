@@ -76,12 +76,15 @@ def find_words(prefix):
     result += '\n'
     return result
 
-
-dict_path = sys.argv[1]
+try:
+    dict_path = sys.argv[1]
+except:
+    print('Path not specified or incorrect')
+    sys.exit()
 try:
     port = int(sys.argv[2])
 except:
-    print('Port number must be int from 0 to 65535')
+    print('Port number not specified or incorrect')
     sys.exit()
 
 if port > 65535 or port < 0:

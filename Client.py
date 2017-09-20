@@ -17,13 +17,16 @@ class ClientProtocol(asyncio.Protocol):
     def connection_lost(self, exc):
         self.loop.stop()
 
-
-addr = sys.argv[1]
+try:
+    addr = sys.argv[1]
+except:
+    print('Server address not specified or incorrect')
+    sys.exit()
 
 try:
     port = int(sys.argv[2])
 except:
-    print('Port number must be int from 0 to 65535')
+    print('Port number not specified or incorrect')
     sys.exit()
 if port > 65535 or port < 0:
     print('Port number must be int from 0 to 65535')
